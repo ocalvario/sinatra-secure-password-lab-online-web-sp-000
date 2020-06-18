@@ -1,6 +1,9 @@
 
-class AddPasswordDigest < ActiveRecord::Migration
+class CreateUsers < ActiveRecord::Migration
   def change
-    add_column :users, :password_digest, :string
+    create_table :users do |t|
+      t.string :username
+      t.string :password
+    end
   end
 end
