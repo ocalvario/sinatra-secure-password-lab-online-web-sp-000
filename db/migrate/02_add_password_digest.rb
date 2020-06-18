@@ -1,4 +1,4 @@
-class AddPasswordDigest < ActiveRecord::Migration
+class AddPasswordDigest < ActiveRecord::Migration[4.2]
   def change
     add_column :users, :password_digest, :string
   end
